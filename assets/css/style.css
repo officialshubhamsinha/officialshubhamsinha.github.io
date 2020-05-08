@@ -1,0 +1,218 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none;opacity: .8; }
+.homepage-bg-1{background-image: url(/images/FB_IMG_1575872591535.jpg);}
+.homepage-bg-2{background-image: url(/images/FB_IMG_1578241816849.jpg);}
+.homepage-bg-3{background-image: url(/images/FB_IMG_1516249811228.jpg);}
+
+.header-logo h4 {
+    margin:  0;
+    font-weight: 500;
+    padding: 23px 0;
+}
+
+.header-logo h4 a span {
+    color: #999;
+}
+
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu li {
+    position:  relative;
+}
+
+.mainmenu li a {
+    text-transform:  capitalize;
+    display: block;
+    padding: 25px 18px;
+}
+
+.social-links a {
+    display:  inline-block;
+    color:  #000;
+    padding: 25px 18px;
+}
+
+.social-links {
+   position: relative;
+   z-index: 1;
+}
+
+.header-area {
+    position: relative;
+    z-index: 1;
+    color:#333;
+}
+.header-area.header-absulate:after, .social-links:after {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #ddd;
+    opacity: .2;
+}
+.header-area.header-absulate .social-links:after{
+    height: 100%;
+    width: 1px;
+    background:#ddd;
+}
+
+
+.header-absulate {
+    position:  fixed;
+    z-index:  9;
+    width:  100%;
+}
+
+.header-absulate a {
+    color:  #fff;
+}
+html, body {
+    height:  100%;
+}
+
+.homepage-area {
+    height:  100%;
+    width:  100%;
+    background-color:  #ddd;
+    background-position:  center;
+    background-size: cover;
+    position:  relative;
+    z-index:  1;
+}
+
+.homepage-wrap {
+    width:  100%;
+    height:  100%;
+}
+
+.homepage-inner {vertical-align:  middle;}
+.homepage-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+.homepage-text {
+    max-width: 800px;
+    margin:  0 auto;
+    text-align:  center;
+    color:  #fff;
+}
+
+.homepage-area:before {
+    position:  absolute;
+    content:  "";
+    top: 0;
+    left:  0;
+    width:  100%;
+    height:  100%;
+    background:  #000;
+    opacity:  .5;
+    z-index:  -1;
+}
+.video-play-btn {
+    width: 50px;
+    height:  50px;
+    display:  inline-block;
+    background:  #fff;
+    line-height:  50px;
+    margin-right: 10px;
+    border-radius:  50%;
+    padding-left:  5px;
+    color: #333;
+}
+.homepage-area, .homepage-area div {
+    height:  100%;
+}
+
+.homepage-area div.homepage-inner, .homepage-area div.homepage-inner div {
+    height:  auto;
+}
+
+.homepage-area div.homepage-inner, .homepage-area div.homepage-inner div, .homepage-area div.owl-nav, .homepage-area div.owl-nav div, .homepage-area div.owl-dots, .homepage-area div.owl-dots div {
+    height: auto;
+}
+.single-homepage-item {
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.homepage-area .owl-nav .owl-prev i.fa, .homepage-area .owl-nav .owl-next i.fa {
+    position:  absolute;
+    top: 50%;
+    left:  50px;
+    font-size:  30px;
+    color:  #fff;
+    width:  50px;
+    height:  50px;
+    background:  #000;
+    line-height: 48px;
+    border-radius:  50%;
+    margin-top: -25px;
+    transition:  .3s;
+}
+
+.homepage-area .owl-nav .owl-next i.fa {
+    left:  auto;
+    right: 50px;
+}
+
+.homepage-area .owl-nav .owl-prev:hover i.fa, .homepage-area .owl-nav .owl-next:hover i.fa {
+    background:  #fff;
+    color:  #000;
+}
+.homepage-area .owl-dots .owl-dot {
+    display:  inline-block;
+    width:  15px;
+    height:  15px;
+    background:  #000;
+    text-align:  center;
+    margin: 0 3px;
+    border-radius:  50%;
+    transition:  .3s;
+}
+
+.homepage-area .owl-dots {
+    position:  absolute;
+    bottom: 20px;
+    left:  50%;
+    margin-left:  -26px;
+}
+
+.homepage-area .owl-dots .owl-dot.active {
+    background:  #fff;
+}
